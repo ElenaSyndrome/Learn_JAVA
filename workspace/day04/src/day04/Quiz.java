@@ -19,6 +19,5 @@ public class Quiz {
 		default:
 			System.out.println("잘못 입력하셨습니다.");
 		}
-		
 	}
 }
