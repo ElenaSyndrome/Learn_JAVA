@@ -137,15 +137,15 @@ public class ForTask {
 		int num1 = 10;
 		String result="";
 		for (int i = num1; i > 0; i/=2) {//i가0보다 클동안 2로 나누기
-			System.out.print(i%2);
+//			System.out.print(i%2); //0101
 			result += i%2;
 		} 
 		
 		//new StringBuffer("문자열").reverse() : 문자열 뒤집기
 		System.out.println(new StringBuffer(result).reverse());
 		
-//		for (int i = result.length()-1; i>=0; i--) {
-//			System.out.println(result.charAt(i));
+//		for (int i = result.length()-1; i>=0; i--) { // 3 2 1 0
+//			System.out.println(result.charAt(i)); //index값을 3210 순으로 뽑아낸다. 1010
 //		}
 	}
 }
