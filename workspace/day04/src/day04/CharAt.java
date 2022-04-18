@@ -11,13 +11,16 @@ public class CharAt {
 		System.out.print("문자열: ");
 		String msg = sc.next();
 		System.out.print("뽑아올 문자의 위치: ");
-		int idx = sc.nextInt();
+		int idx = sc.nextInt(); //문자의 위치 == idx
 		//"문자열".length() : 문자열의 길이
 		if(idx>msg.length() || idx<=0) {//idx가 msg의 길이보다 크다면 또는 0보다 작거나 같다면
 			System.out.println("문자열 범위 바깥입니다.");
 		}
 		else {
 			//"문자열".charAt(위치정수값) : 해당하는 위치의 한 문자 뽑아오기(idx는 0부터 시작)
+			//char ch = msg.charAt(3);
+			// 1 이라고 입력하면 1-1 = 0번째 글자를 뽑아내게됨. 즉 Hello에서 H
+			// 2 라고 입력하면 2-1 = 1번째 글자, Hello에서 e
 			char ch = msg.charAt(idx-1); // 통째로가 char값이므로 char 변수에 넣을수있음
 			System.out.println(idx+"번째 글자는 "+ch+" 입니다.");
 		}
